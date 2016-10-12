@@ -4,7 +4,7 @@ var socket;
 
 function setup() {
   background(200,80,30);
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight + 200);
   textFont('Roboto Mono'); 
 
   //work on the web!!!!!!!!!!!!
