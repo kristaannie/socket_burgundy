@@ -133,7 +133,7 @@ function draw(){
 	// c1r1.name();
 	
 
-	var c2r1 = new wordButton (collumn2, row1, 140, 10, 10, 40, "fragment");
+	var c2r1 = new wordButton (collumn2, row1, 125, 10, 10, 40, "fragment");
 	c2r1.display();
 	// c2r1.name();
 
@@ -181,7 +181,7 @@ function draw(){
 			console.log("squares?")
 			counter = 150;
 		}
-			var a = map(counter, 0, 150, 0, 240)
+			var a = map(counter, 0, 150, 30, 240)
 			rectMode(CORNER);
 			fill(0, a);
 		    rect(0, 0, windowWidth, windowHeight);
@@ -190,9 +190,9 @@ function draw(){
 		  	of.Step();
 		    noStroke();
 			fill(255);
-			textSize(60);
-			textAlign(CENTER);
-			text("TRANSMITTING", windowWidth/2, windowHeight/2 + 100)
+			// textSize(60);
+			// textAlign(CENTER);
+			// text("TRANSMITTING", windowWidth/2, windowHeight/2 + 100)
 			// textSize(16);
 			// wordButton.buttonSelect();
 
