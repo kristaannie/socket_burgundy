@@ -44,7 +44,7 @@ function ftext(fountain, particle) {
 // }
 
 function setup(){
-  createCanvas(screen.width, screen.height);
+  createCanvas(windowWidth, windowHeight);
 
   // for working on the web! 
   socket = io.connect('https://tranquil-ravine-39783.herokuapp.com/');
@@ -88,7 +88,7 @@ function draw(){
 	var row2 = windowHeight * (2/4);
 	var row3 = windowHeight * (3/4);
 	
-	background(60, 109, 13);
+	background(127, 48, 66);
 
 
 
