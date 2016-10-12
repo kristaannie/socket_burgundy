@@ -4,11 +4,11 @@ var socket;
 
 function setup() {
   background(200,80,30);
-  createCanvas(windowWidth, windowHeight + 200);
+  createCanvas(windowWidth, windowHeight);
   textFont('Roboto Mono'); 
 
   //work on the web!!!!!!!!!!!!
- socket = io.connect('https://tranquil-ravine-39783.herokuapp.com/');
+ socket = io.connect('https://guarded-springs-64270.herokuapp.com/');
   
  //work on your localhost!!!!!!!!!!!  
  // socket = io.connect('localhost:3000')

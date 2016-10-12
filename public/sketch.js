@@ -44,10 +44,10 @@ function ftext(fountain, particle) {
 // }
 
 function setup(){
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight + 1000);
 
   // for working on the web! 
-  socket = io.connect('https://tranquil-ravine-39783.herokuapp.com/');
+  socket = io.connect('https://guarded-springs-64270.herokuapp.com/');
 
   //for working on localhost! 
   // socket = io.connect('localhost:3000');
@@ -113,7 +113,7 @@ function draw(){
     		text(name, x, y + 7);
     		noStroke();
 			fill(255,200);
-			textSize(22);
+			textSize(18);
 			textAlign(CENTER);
     	}
     	this.display = function () {
@@ -128,36 +128,36 @@ function draw(){
 	
 
 
-	var c1r1 = new wordButton (collumn1, row1, 130, 10, 20, 40, "navigate");
+	var c1r1 = new wordButton (collumn1, row1, 110, 10, 20, 40, "navigate");
 	c1r1.display();
 	// c1r1.name();
 	
 
-	var c2r1 = new wordButton (collumn2, row1, 160, 10, 10, 40, "fragment");
+	var c2r1 = new wordButton (collumn2, row1, 140, 10, 10, 40, "fragment");
 	c2r1.display();
 	// c2r1.name();
 
-	var c3r1 = new wordButton (collumn3, row1, 140, 10, 30, 40, "blueforms");
+	var c3r1 = new wordButton (collumn3, row1, 120, 10, 30, 40, "blueforms");
 	c3r1.display();
 	// c3r1.name();
 
 
-	var c1r2 = new wordButton (collumn1, row2, 140, 10, 10, 40, "particle");
+	var c1r2 = new wordButton (collumn1, row2, 120, 10, 10, 40, "particle");
 	c1r2.display();
 
-	var c2r2 = new wordButton (collumn2, row2, 140, 10, 30, 40, "modify");
+	var c2r2 = new wordButton (collumn2, row2, 120, 10, 30, 40, "modify");
 	c2r2.display();
 
-	var c3r2 = new wordButton (collumn3, row2, 120, 20, 10, 40, "trace");
+	var c3r2 = new wordButton (collumn3, row2, 100, 20, 10, 40, "trace");
 	c3r2.display();
 
-	var c1r3 = new wordButton (collumn1, row3, 130, 10, 10, 40, "submit");
+	var c1r3 = new wordButton (collumn1, row3, 110, 10, 10, 40, "submit");
 	c1r3.display();
 
-	var c2r3 = new wordButton (collumn2, row3, 130, 10, 40, 40, "windows");
+	var c2r3 = new wordButton (collumn2, row3, 110, 10, 40, 40, "windows");
 	c2r3.display();
 
-	var c3r3 = new wordButton (collumn3, row3, 140, 10, 10, 30, "collect");
+	var c3r3 = new wordButton (collumn3, row3, 110, 10, 10, 30, "collect");
 	c3r3.display();
 
 	noStroke();
@@ -190,6 +190,9 @@ function draw(){
 		  	of.Step();
 		    noStroke();
 			fill(255);
+			textSize(60);
+			textAlign(CENTER);
+			text("TRANSMITTING", windowWidth/2, windowHeight/2 + 100)
 			// textSize(16);
 			// wordButton.buttonSelect();
 
