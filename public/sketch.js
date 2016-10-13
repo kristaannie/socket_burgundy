@@ -242,7 +242,7 @@ function ellipseButton(x,y,w,h, name, callback){
 		callback(hit, name);
 		console.log("got here")
 		isHit = true;
-		setTimeout(stop, 4000);
+		setTimeout(stop, 90000);
 		function stop () {
 		  	isHit = false;
 		  	counter = 0;
