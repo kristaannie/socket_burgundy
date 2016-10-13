@@ -44,7 +44,7 @@ function ftext(fountain, particle) {
 // }
 
 function setup(){
-  createCanvas(windowWidth, windowHeight + 1000);
+  createCanvas(screen.width, screen.height);
 
   // for working on the web! 
   socket = io.connect('https://guarded-springs-64270.herokuapp.com/');
@@ -213,9 +213,9 @@ function mousePressed(){
 	
 
 
-	var collumn1 = windowWidth * (1/4);
-	var collumn2 = windowWidth * (2/4);
-	var collumn3 = windowWidth * (3/4);
+	var collumn1 = windowWidth * (1/4) + 80;
+	var collumn2 = windowWidth * (2/4) + 60;
+	var collumn3 = windowWidth * (3/4) + 40;
 	var row1 = windowHeight * (1/4);
 	var row2 = windowHeight * (2/4);
 	var row3 = windowHeight * (3/4);
