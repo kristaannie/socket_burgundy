@@ -47,10 +47,10 @@ function setup(){
   createCanvas(windowWidth, windowHeight + 1000);
 
   // for working on the web! 
-  socket = io.connect('https://guarded-springs-64270.herokuapp.com/');
+  // socket = io.connect('https://guarded-springs-64270.herokuapp.com/');
 
   //for working on localhost! 
-  // socket = io.connect('localhost:3000');
+  socket = io.connect('localhost:3000');
 	
   textFont('Roboto Mono'); 
 

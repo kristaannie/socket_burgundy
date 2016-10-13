@@ -3,6 +3,8 @@ var app = express();
 
 //for working on localhost!!! 
 // var server = app.listen(3000);
+
+//for working on the web! 
 var server = require('http').createServer(app);
 
 var io = require('socket.io').listen(server);

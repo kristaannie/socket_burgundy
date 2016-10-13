@@ -8,10 +8,10 @@ function setup() {
   textFont('Roboto Mono'); 
 
   //work on the web!!!!!!!!!!!!
- socket = io.connect('https://guarded-springs-64270.herokuapp.com/');
+ // socket = io.connect('https://guarded-springs-64270.herokuapp.com/');
   
  //work on your localhost!!!!!!!!!!!  
- // socket = io.connect('localhost:3000')
+ socket = io.connect('localhost:3000')
 
 
   socket.on('navigate', navigate); 
@@ -128,7 +128,7 @@ function collect(){
 }
 
 function eraseWord(){
-	background(142, 10, 10);
+	fill(106, 21, 24);
 	rect(0, 0, windowWidth, windowHeight);
 	console.log("word erased");
 }
