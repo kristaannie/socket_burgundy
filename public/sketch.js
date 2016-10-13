@@ -162,6 +162,7 @@ function draw(){
 
 	noStroke();
 	fill(255);
+	textSize(22);
 
 	c1r1.name();
 	c2r1.name();
