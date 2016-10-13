@@ -68,7 +68,7 @@ function setup(){
         angle: [640, 100],
         size: [1, 5],
         dxy: [0.1, 0.1],
-        x: 0.5,
+        x: 0.6,
         y: 0.1
     };
 
@@ -81,9 +81,9 @@ function setup(){
 
 function draw(){
 
-	var collumn1 = windowWidth * (1/4);
-	var collumn2 = windowWidth * (2/4);
-	var collumn3 = windowWidth * (3/4);
+	var collumn1 = windowWidth * (1/4) + 80;
+	var collumn2 = windowWidth * (2/4) + 60;
+	var collumn3 = windowWidth * (3/4) + 40;
 	var row1 = windowHeight * (1/4);
 	var row2 = windowHeight * (2/4);
 	var row3 = windowHeight * (3/4);
@@ -133,35 +133,35 @@ function draw(){
 	// c1r1.name();
 	
 
-	var c2r1 = new wordButton (collumn2, row1, 135, 10, 10, 40, "fragment");
+	var c2r1 = new wordButton (collumn2, row1, 150, 10, 10, 40, "fragment");
 	c2r1.display();
 	// c2r1.name();
 
-	var c3r1 = new wordButton (collumn3, row1, 130, 10, 30, 40, "blueforms");
+	var c3r1 = new wordButton (collumn3, row1, 140, 10, 30, 40, "blueforms");
 	c3r1.display();
 	// c3r1.name();
 
 
-	var c1r2 = new wordButton (collumn1, row2, 135, 10, 10, 40, "particle");
+	var c1r2 = new wordButton (collumn1, row2, 140, 10, 10, 40, "particle");
 	c1r2.display();
 
-	var c2r2 = new wordButton (collumn2, row2, 120, 10, 30, 40, "modify");
+	var c2r2 = new wordButton (collumn2, row2, 140, 10, 30, 40, "modify");
 	c2r2.display();
 
 	var c3r2 = new wordButton (collumn3, row2, 130, 20, 10, 40, "trace");
 	c3r2.display();
 
-	var c1r3 = new wordButton (collumn1, row3, 140, 10, 10, 40, "submit");
+	var c1r3 = new wordButton (collumn1, row3, 130, 10, 10, 40, "submit");
 	c1r3.display();
 
-	var c2r3 = new wordButton (collumn2, row3, 120, 10, 40, 40, "windows");
+	var c2r3 = new wordButton (collumn2, row3, 140, 10, 40, 40, "windows");
 	c2r3.display();
 
-	var c3r3 = new wordButton (collumn3, row3, 120, 10, 10, 30, "collect");
+	var c3r3 = new wordButton (collumn3, row3, 140, 10, 10, 30, "collect");
 	c3r3.display();
 
 	noStroke();
-	fill(255);
+	fill(255,200);
 	textSize(22);
 
 	c1r1.name();
@@ -196,7 +196,7 @@ function draw(){
 			textAlign(CENTER);
 			textSize(40 + change);
 			fill(200, a -100);
-			text("((TRANSMITTING))", windowWidth/2, windowHeight/2 + 20);
+			text("((TRANSMITTING))", windowWidth/2 + 75, windowHeight/2 + 20);
 
 		    }
 	    
