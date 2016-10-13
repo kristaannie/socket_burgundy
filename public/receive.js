@@ -39,108 +39,96 @@ function draw() {
 
 function navigate(){
 	console.log("click came through");
-	background(165, 34, 58);
-	textSize(200);
+	background(142, 18, 18);
+	textSize(220);
 	textAlign(CENTER);
 	fill(255);
 	text("NAVIGATE", windowWidth/2, windowHeight/2);
+	setTimeout(eraseWord, 90000);
 }
 
 function fragment(){
 	console.log("click 2 came through");
-	background(165, 34, 58);
-	textSize(200);
+	background(142, 18, 18);
+	textSize(220);
 	fill(255);
 	textAlign(CENTER)
 	text("FRAGMENT", windowWidth/2 + change, windowHeight/2);
+	setTimeout(eraseWord, 90000);
 }
 
 function blueforms(){
 	console.log("click 3 came through");
-	background(165, 34, 58);
-	textSize(200);
+	background(142, 18, 18);
+	textSize(220);
 	fill(255);
 	textAlign(CENTER)
 	text("BLUEFORMS", windowWidth/2, windowHeight/2);
+	setTimeout(eraseWord, 90000);
 }
 
 function particle(){
 	console.log("click 3 came through");
-	background(165, 34, 58);
-	textSize(200);
+	background(142, 18, 18);
+	textSize(220);
 	fill(255);
 	textAlign(CENTER)
 	text("PARTICLE", windowWidth/2, windowHeight/2);
+	setTimeout(eraseWord, 90000);
 }
 
 function modify(){
 	console.log("click 2 came through");
-	background(165, 34, 58);
-	textSize(200);
+	background(142, 18, 18);
+	textSize(220);
 	fill(255);
 	textAlign(CENTER)
 	text("MODIFY", windowWidth/2, windowHeight/2);
+	setTimeout(eraseWord, 90000);
 }
 
 function trace(){
 	console.log("click 2 came through");
-	background(165, 34, 58);
-	textSize(200);
+	background(142, 18, 18);
+	textSize(220);
 	fill(255);
 	textAlign(CENTER)
 	text("TRACE", windowWidth/2, windowHeight/2);
+	setTimeout(eraseWord, 90000);
 }
 
 function submit(){
 	console.log("click 2 came through");
-	background(165, 34, 58);
-	textSize(200);
+	background(142, 18, 18);
+	textSize(220);
 	fill(255);
 	textAlign(CENTER)
 	text("SUBMIT", windowWidth/2, windowHeight/2);
+	setTimeout(eraseWord, 90000);
 }
 
 function windows(){
 	console.log("click 2 came through");
-	background(165, 34, 58);
-	textSize(200);
+	background(142, 18, 18);
+	textSize(220);
 	fill(255);
 	textAlign(CENTER)
 	text("WINDOWS", windowWidth/2, windowHeight/2);
+	setTimeout(eraseWord, 90000);
 }
 
 function collect(){
 	console.log("click 2 came through");
-	background(165, 34, 58);
-	textSize(300);
+	background(142, 18, 18);
+	textSize(220);
 	fill(255);
 	textAlign(CENTER)
-	text("COLLECT", windowWidth/2, windowHeight/2 - 100);
+	text("COLLECT", windowWidth/2, windowHeight/2);
+	setTimeout(eraseWord, 90000);
 }
 
-// function newDrawing(data) {
-// 	stroke(255);
-// 	fill(0);
-// 	ellipse(data.x, data.y, 20, 20);
-
-
-// }
-
-// function mouseDragged() {
-// 	console.log("you draggin");
-
-// 	var data = {
-// 		x: mouseX,
-// 		y: mouseY
-// 	}
-// var socket;
-
-
-
-// 	socket.emit('mouse', data);
-
-// 	stroke(0);
-// 	fill(255);
-// 	ellipse(mouseX, mouseY, 20, 20);
-// }
-
+function eraseWord(){
+	background(142, 10, 10);
+	rect(0, 0, windowWidth, windowHeight);
+	console.log("word erased");
+}

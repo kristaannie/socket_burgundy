@@ -88,7 +88,7 @@ function draw(){
 	var row2 = windowHeight * (2/4);
 	var row3 = windowHeight * (3/4);
 	
-	background(165, 34, 58);
+	background(142, 18, 18);
 
 
 
@@ -185,16 +185,17 @@ function draw(){
 			rectMode(CORNER);
 			fill(0, a);
 		    rect(0, 0, windowWidth, windowHeight);
+		    //fountain
 			of.Draw();
 		    of.Create();
 		  	of.Step();
 		    noStroke();
 			fill(255);
-			// textSize(60);
-			// textAlign(CENTER);
-			// text("TRANSMITTING", windowWidth/2, windowHeight/2 + 100)
-			// textSize(16);
-			// wordButton.buttonSelect();
+			//word
+			textAlign(CENTER);
+			textSize(40 + change);
+			fill(200, a -100);
+			text("((TRANSMITTING))", windowWidth/2, windowHeight/2 + 20);
 
 		    }
 	    
