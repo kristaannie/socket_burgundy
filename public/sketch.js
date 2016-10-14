@@ -185,7 +185,7 @@ function draw(){
 			var a = map(counter, 0, 150, 30, 240)
 			rectMode(CORNER);
 			fill(0, a);
-		    rect(0, 0, windowWidth, windowHeight);
+		    rect(0, 0, screen.width, screen.height);
 		    //fountain
 			of.Draw();
 		    of.Create();
