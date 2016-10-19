@@ -206,7 +206,7 @@ function draw(){
 			noFill();
 			rect(windowWidth/2 - 20, windowHeight/2 + 80, 200, 20);
 			noStroke();
-			fill(97, 15, 109, 200);
+			fill(142, 18, 18, 200);
 			rect(windowWidth/2 - 15, windowHeight/2 + 83, timeBar, 15);
 
 		    }
