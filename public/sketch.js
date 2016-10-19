@@ -182,7 +182,11 @@ function draw(){
 			console.log("squares?")
 			counter = 150;
 		}
-			var a = map(counter, 0, 150, 30, 240)
+ 
+ 			timeBar = map(counter, 0, 5410, 0, 192);
+
+			//screen black
+			var a = map(counter, 0, 150, 0, 240)
 			rectMode(CORNER);
 			fill(0);
 		    rect(0, 0, screen.width, screen.height);
@@ -197,8 +201,16 @@ function draw(){
 			textSize(40 + change);
 			fill(200, a);
 			text("((TRANSMITTING))", windowWidth/2 + 75, windowHeight/2 + 20);
+			rectMode(CORNER);
+			stroke(255);
+			noFill();
+			rect(windowWidth/2 - 20, windowHeight/2 + 80, 200, 20);
+			noStroke();
+			fill(97, 15, 109, 200);
+			rect(windowWidth/2 - 15, windowHeight/2 + 83, timeBar, 15);
 
 		    }
+	
 	    
 	
 	
